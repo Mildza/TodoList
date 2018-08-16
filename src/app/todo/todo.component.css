@@ -1,0 +1,49 @@
+header {
+    padding: 10px;
+    background-color: rgb(85, 80, 80);
+    color:#FFF;
+    height:60px;
+    font-size: 1.4em;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+header a {
+    padding: 20px;
+}
+
+header > a {
+    font-weight: bold;
+}
+
+.todolist {
+    width: 600px;
+    background-color: rgb(161, 161, 161);
+    color:#FFF;
+    margin:0 auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.todolist a {
+    cursor: pointer;
+}
+
+ul {list-style-type: none;}
+
+li {font-size: 1.6em;}
+
+.add-task {
+    height:20px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.add-task button {
+    display: inline-block;
+    margin-top:-5px;
+    margin-left: 10px;
+}

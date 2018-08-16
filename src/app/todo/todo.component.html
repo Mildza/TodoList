@@ -1,0 +1,25 @@
+<header> 
+  <a class="">Todo List</a>
+  <div class="float-right white">
+    <a>Todo Tasks: {{this.unfinished}}</a>
+    <a>Finished Tasks: {{this.finished}}</a>
+  </div>
+</header>
+<div class="todolist">
+  <ul *ngFor="let task of api, let i = index">
+    <li>
+    <input type="checkbox" name="tocheck" (click)="check(i)" value="{{i}}" [(ngModel)]="task.finish" [checked]="task.finish">  
+    
+    <a [ngStyle]="{'text-decoration':task.finish == true ? 'line-through' : 'none' }" (click)="check(i)">
+      {{task.task}}</a>  
+    </li>
+  </ul>
+  
+</div>
+<div style="text-align:center" *ngIf="!add">
+  <button type="button" class="btn btn-dark" (click)="newTodo()">New Todo</button>
+</div>
+<div class="add-task" *ngIf="add">
+  <input type="text" autofocus [(ngModel)]="newTask">
+  <button class="btn btn-dark" (click)="addTodo()">Add Task</button>
+</div>
