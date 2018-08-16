@@ -28,7 +28,7 @@ header > a {
     margin-bottom: 10px;
 }
 
-.todolist a {
+.todolist a, input {
     cursor: pointer;
 }
 
@@ -38,12 +38,21 @@ li {font-size: 1.6em;}
 
 .add-task {
     height:20px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
 }
 
 .add-task button {
     display: inline-block;
-    margin-top:-5px;
+    margin-top:-9px;
     margin-left: 10px;
+}
+
+.add-task input {
+    font-size: 1em !important;
+}
+
+.close {
+    margin-top: -30px;
+    margin-right: 30px;
 }

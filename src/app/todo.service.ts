@@ -1,4 +1,3 @@
-import {Observable } from 'rxjs'
 import { of } from 'rxjs';
 
 export class TodoService {
@@ -21,7 +20,7 @@ export class TodoService {
       finish: false
     }
   ]
-
+  finished
   constructor() { }
 
   makeApi() {
@@ -40,5 +39,9 @@ export class TodoService {
     } else { 
       update.finish = true
     }
+  }
+
+  deleteApi(id){
+    this.Tasks.splice(id,1)
   }
 }

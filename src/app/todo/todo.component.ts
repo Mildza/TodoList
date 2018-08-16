@@ -50,4 +50,15 @@ export class TodoComponent implements OnInit {
       this.add=false
     })
   }
+
+  delete(id){
+    this.todoService.deleteApi(id)
+    this.todoService.makeApi()
+    .subscribe( (res)=> {
+      this.api = res
+      this.finished = this.api.filter(word => word.finish === true).length
+      this.unfinished = this.api.filter(word => word.finish === false).length
+      this.add=false
+    })
+  }
 }
