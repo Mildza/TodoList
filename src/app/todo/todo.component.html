@@ -1,3 +1,4 @@
+
 <header> 
   <a class="">Todo List</a>
   <div class="float-right white">
@@ -26,3 +27,4 @@
   <button class="btn btn-dark" (click)="addTodo()" [disabled]="!validateForm.valid">Add Task</button>
 </form>
 </div>
+<div class="error" [ngStyle]="{'background-color':color == true ? 'green' : 'red' }">{{mesagge}}</div>

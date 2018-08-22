@@ -4,7 +4,7 @@ import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
-import { TodoService } from './todo.service';
+import { TodoService } from './services/todo.service';
 
 @NgModule({
   declarations: [

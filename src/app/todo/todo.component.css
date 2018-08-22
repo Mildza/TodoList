@@ -1,3 +1,19 @@
+.error {
+    z-index: 10000;
+    width:50%;
+    margin: auto auto;
+    position: absolute;
+    bottom:0;
+    left:25%;
+    text-align: center;
+    font-size:30px;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:#FFF;
+    margin-top: 10px;
+}
+
 header {
     padding: 10px;
     background-color: rgb(85, 80, 80);
@@ -50,6 +66,7 @@ li {font-size: 1.6em;}
 
 .add-task input {
     font-size: 1em !important;
+    cursor: auto;
 }
 
 .close {
